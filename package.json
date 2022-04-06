@@ -1,0 +1,29 @@
+{
+  "name": "phonebook_exercises1-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schledzewskimr/phonebook_exercises1-6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schledzewskimr/phonebook_exercises1-6/issues"
+  },
+  "homepage": "https://github.com/schledzewskimr/phonebook_exercises1-6#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.2",
+    "moment-timezone": "^0.5.34"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
