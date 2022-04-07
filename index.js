@@ -4,6 +4,7 @@ const express = require('express')
 const app = express()
 const Moment = require('moment-timezone');
 const morgan = require('morgan');
+app.use(morgan(":method :url :status :res[content-length] - :response-time ms :newPerson"))
 
 let data = [
     { 
@@ -103,7 +104,7 @@ app.post('/api/persons', (request, response) => {
 
         // app.use(morgan("tiny"))
 
-// part 8
+// part 8 - also on top
 
 morgan.token('newPerson', (request, response) => {
     if (request.method === 'POST'){
@@ -113,8 +114,6 @@ morgan.token('newPerson', (request, response) => {
     return null
     }
 })
-
-app.use(morgan(":method :url :status :res[content-length] - :response-time ms :newPerson"))
 
 
 const PORT = 3001;
